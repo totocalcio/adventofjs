@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="src/timer/styles.scss" />
+  </head>
+  <body class="l-timer c-grid c-grid__place-center">
+    <div class="p-timer__wrapper">
+      <div
+        class="p-timer c-flex c-flex__justify-center c-flex__align-center c-flex__direction-col"
+      >
+        <p class="p-time" id="js-time">
+          <span id="js-minutes">15</span>:<span id="js-seconds">00</span>
+        </p>
+        <div class="p-time" style="display: none;" id="js-time__setValue">
+          <input type="text" id="js-setting__minutes" />
+          <input type="text" id="js-setting__seconds" />
+        </div>
+        <button id="js-start" class="p-button">start</button>
+        <button id="js-stop" class="p-button" style="display: none;">
+          start
+        </button>
+        <button type="button" id="js-setting">
+          <img class="p-gear" src="/assets/timer/images/gear.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="src/timer/script.js"></script>
+</html>
